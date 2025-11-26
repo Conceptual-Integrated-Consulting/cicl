@@ -1,0 +1,315 @@
+.elementor-section {
+    background-color: #fafafa;
+}
+
+.elementor-406 .elementor-element.elementor-element-48666b1>.elementor-container {
+    max-width: 1000px;
+}
+
+.elementor-section .elementor-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.elementor-section .fa-solid,
+.elementor-section .fas {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.elementor-row {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@media (min-width: 768px) {
+
+    .elementor-column.elementor-col-100,
+    .elementor-column[data-col="100"] {
+        width: 100%;
+    }
+}
+
+.elementor-column,
+.elementor-column-wrap {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+}
+
+.elementor-column-wrap {
+    width: 100%;
+}
+
+.elementor-column-gap-wide>.elementor-row>.elementor-column>.elementor-element-populated>.elementor-widget-wrap {
+    padding: 20px;
+}
+
+.elementor:not(.elementor-bc-flex-widget) .elementor-widget-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.elementor-widget-wrap {
+    position: relative;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+}
+
+.elementor-406 .elementor-element.elementor-element-6fbbf6b {
+    text-align: center;
+}
+
+.elementor-widget:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.elementor-widget-wrap>.elementor-element {
+    width: 100%;
+}
+
+.elementor-widget {
+    position: relative;
+}
+
+.elementor-element .elementor-widget-container {
+    -webkit-transition: background .3s, border .3s, -webkit-border-radius .3s, -webkit-box-shadow .3s;
+    transition: background .3s, border .3s, -webkit-border-radius .3s, -webkit-box-shadow .3s;
+    -o-transition: background .3s, border .3s, border-radius .3s, box-shadow .3s;
+    transition: background .3s, border .3s, border-radius .3s, box-shadow .3s;
+    transition: background .3s, border .3s, border-radius .3s, box-shadow .3s, -webkit-border-radius .3s, -webkit-box-shadow .3s;
+}
+
+.elementor-406 .elementor-element.elementor-element-6fbbf6b .elementor-heading-title {
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.elementor-widget-heading .elementor-heading-title.elementor-size-xl {
+    font-size: 39px;
+}
+
+.elementor-widget-heading .elementor-heading-title {
+    color: var(--e-global-color-primary);
+    font-family: var(--e-global-typography-primary-font-family), Sans-serif;
+    font-weight: var(--e-global-typography-primary-font-weight);
+}
+
+.elementor-heading-title {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+.elementor-406 .elementor-element.elementor-element-97a7f9c>.elementor-widget-container {
+    padding: 0px 0px 0px 0px;
+}
+
+.oew-timeline .oew-timeline-inner {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.oew-timeline .oew-timeline-item-wrap {
+    position: relative;
+    padding-left: 50px;
+}
+
+.oew-timeline .oew-timeline-item-wrap .oew-timeline-line {
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+.elementor-406 .elementor-element.elementor-element-97a7f9c .oew-timeline .oew-timeline-item-wrap .oew-timeline-line span {
+    background-color: #04283a;
+}
+
+.oew-timeline .oew-timeline-item-wrap .oew-timeline-line span {
+    display: block;
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background-color: #04283a;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    transform-origin: center;
+}
+
+.oew-timeline .oew-timeline-item-wrap .oew-timeline-item-container {
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+
+.oew-timeline .oew-timeline-item-wrap .oew-timeline-icon {
+    position: absolute;
+    top: 20px;
+    left: 51px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.elementor-406 .elementor-element.elementor-element-97a7f9c .oew-timeline .oew-timeline-item-wrap .oew-timeline-icon span {
+    background-color: #ffffff;
+    color: #04283a;
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    border-radius: 50%;
+}
+
+.oew-timeline .oew-timeline-item-wrap .oew-timeline-custom-icon span {
+    padding: 12px;
+    line-height: 1;
+}
+
+.oew-timeline .oew-timeline-item-wrap .oew-timeline-icon span {
+    position: absolute;
+    background-color: #fff;
+    border: 3px solid #04283a;
+    padding: 20px;
+    border-radius: 130px;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.elementor-406 .elementor-element.elementor-element-97a7f9c .oew-timeline .oew-timeline-date span {
+    text-transform: uppercase;
+    background-color: #04283a;
+    color: #ffffff;
+}
+
+.elementor-widget-oew-timeline .oew-timeline .oew-timeline-date span {
+    font-family: var(--e-global-typography-accent-font-family), Sans-serif;
+    font-weight: var(--e-global-typography-accent-font-weight);
+}
+
+.oew-timeline .oew-timeline-date {
+    padding: 10px 50px;
+}
+
+.oew-timeline .oew-timeline-date span {
+    background-color: #009e64;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.oew-timeline .oew-timeline-item-wrap .oew-timeline-arrow {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    z-index: 0;
+    top: 15px;
+    left: -8px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.elementor-406 .elementor-element.elementor-element-97a7f9c .oew-timeline .oew-timeline-item-wrap .oew-timeline-item-main {
+    background-color: #ffffff;
+    border-style: solid;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.oew-timeline .oew-timeline-item-wrap .oew-timeline-item-main {
+    position: relative;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: .81rem;
+}
+
+.oew-timeline .oew-timeline-item-wrap .oew-timeline-item-main-left {
+    border-right: 1.11rem solid #009e64;
+}
+
+.oew-timeline .oew-timeline-item-wrap .oew-timeline-item-main-right {
+    border-left: 1.11rem solid #036ca6;
+}
+
+.oew-timeline .oew-timeline-date.oew-timeline-date-right {
+    text-align: right;
+}
+
+.oew-timeline .oew-timeline-date.oew-timeline-date-right,
+.oew-timeline-date {
+    display: none;
+}
+
+.oew-timeline-icon .oew-timeline-custom-icon span i {
+    font-size: 50px;
+    color: #04283a;
+}
+
+@media only screen and (min-width: 960px) {
+
+    .oew-timeline.oew-timeline-center .oew-timeline-item {
+        width: 50%;
+    }
+
+    .oew-timeline.oew-timeline-center .oew-timeline-item-wrap {
+        padding-left: 0;
+    }
+
+    .oew-timeline.oew-timeline-center .oew-timeline-item-left .oew-timeline-line {
+        right: 0;
+    }
+
+    .oew-timeline.oew-timeline-center .oew-timeline-item-left .oew-timeline-item-container {
+        padding-right: 50px;
+        padding-left: 0;
+    }
+
+    .oew-timeline.oew-timeline-center .oew-timeline-item-left .oew-timeline-icon {
+        right: 0;
+        left: auto;
+    }
+
+    .oew-timeline.oew-timeline-center .oew-timeline-item-left .oew-timeline-arrow {
+        right: -8px;
+        left: auto;
+    }
+
+    .oew-timeline.oew-timeline-center .oew-timeline-item-right .oew-timeline-icon {
+        left: 0;
+    }
+
+    .oew-timeline .oew-timeline-date.oew-timeline-date-right,
+    .oew-timeline-date {
+        display: block;
+    }
+
+    .oew-timeline .oew-timeline-date-right span {
+        background-color: #036ca6;
+    }
+}
