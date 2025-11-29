@@ -1113,6 +1113,9 @@ header {
   margin-bottom: 10px;
   gap: 1rem;
 }
+.subscribe-form input[type="email"] {
+  color: var(--general-white);
+}
 
 .subscribe-input {
   flex-grow: 1;
@@ -1300,7 +1303,7 @@ header {
 }
 
 .section-tag {
-  font-size: 14px;
+  font-size: 1rem;
   color: #444;
   margin-bottom: 10px;
 }
@@ -2396,6 +2399,18 @@ header {
   text-align: left;
 }
 
+.organization-approach.hr-leaders-section .grid {
+  text-align: left;
+}
+.organization-approach.hr-leaders-section .grid p {
+  max-width: 100%;
+  line-height: 1.4;
+  margin-block: .5rem;
+}
+.organization-approach.hr-leaders-section .grid ul li {
+  list-style: disc;
+}
+
 .organization-approach .solution-grid p {
   max-width: 100%;
 }
@@ -2528,6 +2543,99 @@ header {
 .data-protection-section p {
   margin-block: 1rem;
 }
+
+.results-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(250px, auto);
+  gap: 1.5rem;
+  margin-block-start: 1.5rem;
+}
+
+/* First card spans 2 rows */
+.result-card.large {
+  grid-row: span 2;
+}
+
+/* Card styles */
+.result-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e5e5e5;
+  display: flex;
+  flex-direction: column;
+}
+.card-image.first-child {
+  height: 500px;
+  background: #e9e9e9;
+  position: relative;
+}
+.card-image {
+  height: 220px;
+  background: #e9e9e9;
+  position: relative;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.category {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.description {
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.card-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-outline {
+  padding: 0.6rem 1rem;
+  border: 1px solid #000;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* Link actions */
+.action-link {
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* WCAG focus states */
+.result-card a:focus{
+  outline: 3px solid var(--primary-color);
+  outline-offset: 3px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .results-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .result-card.large {
+    grid-row: span 1;
+  }
+}
+
 
 
 /*=======================================================================

@@ -6,6 +6,16 @@
     max-width: 1000px;
 }
 
+.secondary-heading p {
+    color: #04283a;
+    /* font-size: 18px; */
+    /* margin-bottom: 12px; */
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
 .elementor-section .elementor-container {
     display: -webkit-box;
     display: -ms-flexbox;
