@@ -2653,6 +2653,7 @@ header {
   color: var(--primary-color);
   font-weight: 600;
   text-decoration: none;
+  margin-block-start: 1rem;
 }
 
 /* WCAG focus states */
