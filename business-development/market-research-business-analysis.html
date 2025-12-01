@@ -177,10 +177,6 @@
       }
     </script>
   </head>
-  <body>
-    <!-- Skip link for keyboard / screen reader users -->
-    
-
     <!-- Scroll-to-top button -->
     <button
       id="backToTop"
@@ -192,34 +188,27 @@
     </button>
 
     <header>
-      <img
-        src="/images/CICL.jpg"
-        alt="CICL logo - Conceptual Integrated Consulting Limited"
-        class="logo"
-      />
-      <nav class="main-nav" aria-label="Primary navigation">
+      <img src="/images/CICL.jpg" alt="CICL brand logo" class="logo" />
+      <nav class="main-nav">
         <ul role="list">
           <li role="listitem" class="nav-item">
-            <a href="/index.html" class="nav-link">Home</a>
+            <a href="/index.html" class="active-navlink" aria-current="page"
+              >Home</a
+            >
           </li>
           <li role="listitem" class="nav-item services" id="service">
             <a href="/service.html" class="nav-link"
               >Our Services
-              <span class="caret"
-                ><i
-                  class="fa-solid fa-chevron-down"
-                  aria-hidden="true"
-                ></i></span
+              <span class="caret"><i class="fa-solid fa-chevron-down"></i></span
             ></a>
             <!-- Mega menu -->
-            <div class="mega-menu" aria-hidden="true">
+            <div class="mega-menu" aria-hidden="">
               <div class="mega-container">
                 <ul role="list" class="mega-col">
                   <li role="listitem" class="mega-col-list">
                     Talent Management &amp; HR Solutions
-                    <a href="/services/talent-management-hr"
-                      ><i class="fa-solid fa-link" aria-hidden="true"></i>
-                      Explore</a
+                    <a href="/services/talent-management-hr-solution.html"
+                      ><i class="fa-solid fa-link"></i> Explore</a
                     >
                   </li>
                   <ul role="list" class="accordion-content">
@@ -229,11 +218,12 @@
                         aria-hidden="true"
                       ></i>
                       <div class="item-text">
-                        <a href="/services/recruitment-selection"
+                        <a href="/talent-management-hr-solution/recruitment-selection.html"
                           ><strong>Recruitment &amp; Selection</strong>
                           <div class="item-sub">
-                            Structured hiring that aligns skills, culture and
-                            long-term potential.
+                            Find and retain the right talent through a
+                            structured hiring process that ensures cultural and
+                            technical fit.
                           </div></a
                         >
                       </div>
@@ -244,11 +234,11 @@
                         aria-hidden="true"
                       ></i>
                       <div class="item-text">
-                        <a href="/services/training-development"
+                        <a href="/talent-management-hr-solution/training-development.html"
                           ><strong>Training &amp; Development</strong>
                           <div class="item-sub">
-                            Targeted learning programmes that grow capability
-                            across your workforce.
+                            Tailored corporate programs that boost employee
+                            skills, productivity, and leadership capacity
                           </div></a
                         >
                       </div>
@@ -259,11 +249,11 @@
                         aria-hidden="true"
                       ></i>
                       <div class="item-text">
-                        <a href="/services/talent-payroll-outsourcing"
+                        <a href="/talent-management-hr-solution/talent-payroll-outsourcing.html"
                           ><strong>Talent &amp; Payroll Outsourcing</strong>
                           <div class="item-sub">
-                            End-to-end HR and payroll operations managed with
-                            precision and compliance.
+                            Stress-free HR and payroll solutions to save time
+                            and ensure compliance.
                           </div></a
                         >
                       </div>
@@ -274,11 +264,11 @@
                         aria-hidden="true"
                       ></i>
                       <div class="item-text">
-                        <a href="/services/background-checks-verification"
+                        <a href="/talent-management-hr-solution/background-checks-verification.html"
                           ><strong>Background Checks &amp; Verification</strong>
                           <div class="item-sub">
-                            Structured screening that protects your organisation
-                            from hiring and compliance risks.
+                            Reduce risks with comprehensive employee and
+                            guarantor verification.
                           </div></a
                         >
                       </div>
@@ -286,11 +276,11 @@
                     <li role="listitem">
                       <i class="fa-solid fa-book icon" aria-hidden="true"></i>
                       <div class="item-text">
-                        <a href="/services/hr-policies-employee-handbook"
+                        <a href="/talent-management-hr-solution/hr-policies-employee-handbook.html"
                           ><strong>HR Policies &amp; Employee Handbook</strong>
                           <div class="item-sub">
-                            Clear, practical people policies and handbooks that
-                            guide behaviour and support culture.
+                            Clear, transparent policies that align people with
+                            business goals.
                           </div></a
                         >
                       </div>
@@ -301,11 +291,11 @@
                         aria-hidden="true"
                       ></i>
                       <div class="item-text">
-                        <a href="/services/career-services"
+                        <a href="/talent-management-hr-solution/career-service.html"
                           ><strong>Career Services</strong>
                           <div class="item-sub">
-                            CV, LinkedIn and interview preparation that elevate
-                            individual career trajectories.
+                            CV, LinkedIn, and professional profile optimization
+                            for global opportunities.
                           </div></a
                         >
                       </div>
@@ -316,9 +306,8 @@
                 <ul role="list" class="mega-col">
                   <li role="listitem" class="mega-col-list">
                     Business Development &amp; Strategy
-                    <a href="/services/business-strategy"
-                      ><i class="fa-solid fa-link" aria-hidden="true"></i>
-                      Explore</a
+                    <a href="/services/business-development-strategy.html"
+                      ><i class="fa-solid fa-link"></i> Explore</a
                     >
                   </li>
                   <ul class="accordion-content">
@@ -328,13 +317,13 @@
                         aria-hidden="true"
                       ></i>
                       <div class="item-text">
-                        <a href="/services/market-research-business-analysis"
+                        <a href="/business-development/market-research-business-analysis.html"
                           ><strong
                             >Market Research &amp; Business Analysis</strong
                           >
                           <div class="item-sub">
-                            Evidence-based insights that guide growth decisions
-                            and strategic bets.
+                            Data-driven insights to guide smarter business
+                            decisions.
                           </div></a
                         >
                       </div>
@@ -345,13 +334,12 @@
                         aria-hidden="true"
                       ></i>
                       <div class="item-text">
-                        <a href="/services/business-model-structure-design"
+                        <a href="/business-development/business-model-structure-design.html"
                           ><strong
                             >Business Model &amp; Structure Design</strong
                           >
                           <div class="item-sub">
-                            Scalable operating and revenue models for long-term
-                            performance.
+                            Build scalable frameworks for long-term success.
                           </div></a
                         >
                       </div>
@@ -362,11 +350,11 @@
                         aria-hidden="true"
                       ></i>
                       <div class="item-text">
-                        <a href="/services/corporate-strategy-execution"
+                        <a href="/business-development/corporate-strategy-execution.html"
                           ><strong>Corporate Strategy &amp; Execution</strong>
                           <div class="item-sub">
-                            Translating vision into measurable, trackable
-                            initiatives.
+                            Align vision, people, and processes for measurable
+                            results.
                           </div></a
                         >
                       </div>
@@ -377,11 +365,10 @@
                         aria-hidden="true"
                       ></i>
                       <div class="item-text">
-                        <a href="/services/corporate-branding"
+                        <a href="/business-development/corporate-branding.html"
                           ><strong>Corporate Branding</strong>
                           <div class="item-sub">
-                            Brand positioning and identity that build trust with
-                            stakeholders.
+                            Create powerful, trust-building brand identities.
                           </div></a
                         >
                       </div>
@@ -389,11 +376,10 @@
                     <li role="listitem">
                       <i class="fa-solid fa-gears icon" aria-hidden="true"></i>
                       <div class="item-text">
-                        <a href="/services/business-process-optimization"
+                        <a href="/business-development/business-process-optimization.html"
                           ><strong>Business Process Optimization</strong>
                           <div class="item-sub">
-                            Lean, efficient processes that remove friction from
-                            operations.
+                            Streamline operations and eliminate inefficiencies.
                           </div></a
                         >
                       </div>
@@ -401,11 +387,10 @@
                     <li role="listitem">
                       <i class="fa-solid fa-coins icon" aria-hidden="true"></i>
                       <div class="item-text">
-                        <a href="/services/financial-modeling-valuation"
+                        <a href="/business-development/financial-modeling-valuation.html"
                           ><strong>Financial Modeling &amp; Valuation</strong>
                           <div class="item-sub">
-                            Clarity on business value, projections and capital
-                            decisions.
+                            Gain clarity on investments and performance.
                           </div></a
                         >
                       </div>
@@ -416,11 +401,10 @@
                         aria-hidden="true"
                       ></i>
                       <div class="item-text">
-                        <a href="/services/auditing-reconciliation"
+                        <a href="/business-development/auditing-reconciliation.html"
                           ><strong>Auditing &amp; Reconciliation</strong>
                           <div class="item-sub">
-                            Independent review and alignment of financial and
-                            operational records.
+                            Ensure compliance, accuracy, and accountability.
                           </div></a
                         >
                       </div>
@@ -431,9 +415,8 @@
                 <ul role="list" class="mega-col">
                   <li role="listitem" class="mega-col-list">
                     Professional Training Programmes
-                    <a href="/services/training-programmes"
-                      ><i class="fa-solid fa-link" aria-hidden="true"></i>
-                      Explore</a
+                    <a href="/services/professional-training-programme.html"
+                      ><i class="fa-solid fa-link"></i> Explore</a
                     >
                   </li>
                   <ul class="accordion-content">
@@ -443,11 +426,11 @@
                         aria-hidden="true"
                       ></i>
                       <div class="item-text">
-                        <a href="/services/training-programmes#leadership"
+                        <a href="/professional-training/leadership-management.html"
                           ><strong>Leadership &amp; Management</strong>
                           <div class="item-sub">
-                            Programmes that grow leaders who can align people,
-                            strategy and execution.
+                            Develop emotionally intelligent leaders who inspire
+                            performance.
                           </div></a
                         >
                       </div>
@@ -455,11 +438,10 @@
                     <li role="listitem">
                       <i class="fa-solid fa-users icon" aria-hidden="true"></i>
                       <div class="item-text">
-                        <a href="/services/training-programmes#hr"
+                        <a href="/professional-training/hr-people-maagement-training.html"
                           ><strong>HR &amp; People Management</strong>
                           <div class="item-sub">
-                            Practical HR training that builds modern people
-                            leaders and HR teams.
+                            Build HR teams that drive business success.
                           </div></a
                         >
                       </div>
@@ -470,11 +452,11 @@
                         aria-hidden="true"
                       ></i>
                       <div class="item-text">
-                        <a href="/services/training-programmes#finance"
+                        <a href="/professional-training/finance-accounting.html"
                           ><strong>Finance &amp; Accounting</strong>
                           <div class="item-sub">
-                            Financial literacy and reporting skills across your
-                            organisation.
+                            Strengthen financial literacy across your
+                            organization.
                           </div></a
                         >
                       </div>
@@ -485,11 +467,12 @@
                         aria-hidden="true"
                       ></i>
                       <div class="item-text">
-                        <a href="/services/training-programmes#tech"
+                        <a href="/professional-training/technology-data.html"
                           ><strong>Technology &amp; Data</strong>
                           <div class="item-sub">
-                            Excel, Power BI, Python and analytics for
-                            data-informed decision-making.
+                            Professional Excel, Power BI, Python, and analytics
+                            for smarter decisions.development for
+                            high-performance teams
                           </div></a
                         >
                       </div>
@@ -497,11 +480,11 @@
                     <li role="listitem">
                       <i class="fa-solid fa-truck icon" aria-hidden="true"></i>
                       <div class="item-text">
-                        <a href="/services/training-programmes#ops"
+                        <a href="/professional-training/operation-supply-chain.html"
                           ><strong>Operations &amp; Supply Chain</strong>
                           <div class="item-sub">
-                            Capacity building for procurement, logistics and
-                            operational teams.
+                            Drive efficiency in procurement, inventory, and
+                            logistics.
                           </div></a
                         >
                       </div>
@@ -512,13 +495,13 @@
                         aria-hidden="true"
                       ></i>
                       <div class="item-text">
-                        <a href="/services/training-programmes#hse"
+                        <a href="/professional-training/health-safety-environment.html"
                           ><strong
                             >Health, Safety &amp; Environment (HSE)</strong
                           >
                           <div class="item-sub">
-                            Training that embeds safety, compliance and
-                            risk-awareness mindsets.
+                            Internationally recognized training for workplace
+                            safety.
                           </div></a
                         >
                       </div>
@@ -529,11 +512,11 @@
                         aria-hidden="true"
                       ></i>
                       <div class="item-text">
-                        <a href="/services/training-programmes#sales"
+                        <a href="/professional-training/sales-marketing.html"
                           ><strong>Sales &amp; Marketing</strong>
                           <div class="item-sub">
-                            Capability-building for client acquisition and
-                            revenue growth.
+                            Cutting-edge strategies for digital growth and
+                            client acquisition.
                           </div></a
                         >
                       </div>
@@ -542,8 +525,7 @@
                 </ul>
               </div>
               <p class="mega-footer">
-                Unlock your next strategic move,
-                <a href="/contact.html">connect with us</a>
+                Unlock your career potential, <a href="/contact.html">Connect with us</a>
               </p>
             </div>
           </li>
@@ -553,6 +535,12 @@
           <li role="listitem" class="nav-item">
             <a href="/contact.html" class="nav-link">Contact us</a>
           </li>
+          <!-- <li role="listitem" class="nav-item">
+            <a href="#" class="nav-link"
+              >Resources<span class="caret"
+                ><i class="fa-solid fa-chevron-down"></i></span
+            ></a>
+          </li> -->
         </ul>
       </nav>
 
@@ -591,9 +579,7 @@
         tabindex="-1"
       >
         <ul class="mobile-links">
-          <li>
-            <a href="/index.html" class="active">Home</a>
-          </li>
+          <li><a href="/index.html" class="active">Home</a></li>
           <!-- Accordion: Services -->
           <li class="accordion-item" id="m-services-item">
             <button
@@ -602,7 +588,7 @@
               aria-expanded="false"
               aria-controls="m-services-panel"
             >
-              <span class="section-label">Services</span>
+              <a href="service.html">Services</a>
               <i
                 class="fa-solid fa-chevron-down chevron"
                 aria-hidden="true"
@@ -621,8 +607,8 @@
                   aria-expanded="false"
                   aria-controls="m-hr-list"
                 >
-                  <span class="section-title"
-                    >Talent Management &amp; HR Solutions</span
+                  <a class="section-title"
+                    >Talent Management &amp; HR Solutions</a
                   >
                   <i
                     class="fa-solid fa-chevron-down chevron"
@@ -631,32 +617,34 @@
                 </button>
                 <ul id="m-hr-list" class="section-list" aria-hidden="true">
                   <li>
-                    <a href="/services/recruitment-selection"
+                    <a href="/services/talent-management-hr#recruitment"
                       >Recruitment &amp; Selection</a
                     >
                   </li>
                   <li>
-                    <a href="/services/training-development"
+                    <a href="/services/talent-management-hr#training"
                       >Training &amp; Development</a
                     >
                   </li>
                   <li>
-                    <a href="/services/talent-payroll-outsourcing"
+                    <a href="/services/talent-management-hr#outsourcing"
                       >Talent &amp; Payroll Outsourcing</a
                     >
                   </li>
                   <li>
-                    <a href="/services/background-checks-verification"
+                    <a href="/services/talent-management-hr#verification"
                       >Background Checks &amp; Verification</a
                     >
                   </li>
                   <li>
-                    <a href="/services/hr-policies-employee-handbook"
+                    <a href="/services/talent-management-hr#policies"
                       >HR Policies &amp; Employee Handbook</a
                     >
                   </li>
                   <li>
-                    <a href="/services/career-services">Career Services</a>
+                    <a href="/services/talent-management-hr#career"
+                      >Career Services</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -668,8 +656,8 @@
                   aria-expanded="false"
                   aria-controls="m-biz-list"
                 >
-                  <span class="section-title"
-                    >Business Development &amp; Strategy</span
+                  <a href="#" class="section-title"
+                    >Business Development &amp; Strategy</a
                   >
                   <i
                     class="fa-solid fa-chevron-down chevron"
@@ -678,35 +666,37 @@
                 </button>
                 <ul id="m-biz-list" class="section-list" aria-hidden="true">
                   <li>
-                    <a href="/services/market-research-business-analysis"
+                    <a href="/services/business-strategy#research"
                       >Market Research &amp; Business Analysis</a
                     >
                   </li>
                   <li>
-                    <a href="/services/business-model-structure-design"
+                    <a href="/services/business-strategy#models"
                       >Business Model &amp; Structure Design</a
                     >
                   </li>
                   <li>
-                    <a href="/services/corporate-strategy-execution"
+                    <a href="/services/business-strategy#execution"
                       >Corporate Strategy &amp; Execution</a
                     >
                   </li>
                   <li>
-                    <a href="/services/corporate-branding">Corporate Branding</a>
+                    <a href="/services/business-strategy#branding"
+                      >Corporate Branding</a
+                    >
                   </li>
                   <li>
-                    <a href="/services/business-process-optimization"
+                    <a href="/services/business-strategy#process"
                       >Business Process Optimization</a
                     >
                   </li>
                   <li>
-                    <a href="/services/financial-modeling-valuation"
+                    <a href="/services/business-strategy#valuation"
                       >Financial Modeling &amp; Valuation</a
                     >
                   </li>
                   <li>
-                    <a href="/services/auditing-reconciliation"
+                    <a href="/services/business-strategy#audit"
                       >Auditing &amp; Reconciliation</a
                     >
                   </li>
@@ -720,8 +710,8 @@
                   aria-expanded="false"
                   aria-controls="m-train-list"
                 >
-                  <span class="section-title"
-                    >Professional Training Programmes</span
+                  <a href="#" class="section-title"
+                    >Professional Training Programmes</a
                   >
                   <i
                     class="fa-solid fa-chevron-down chevron"
