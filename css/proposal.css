@@ -17,6 +17,7 @@
 
 .proposal-page {
   padding: 0 1.5rem 4rem;
+    margin-block-start: 3rem;
 }
 
 .proposal-hero {
