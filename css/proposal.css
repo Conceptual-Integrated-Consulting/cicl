@@ -10,7 +10,7 @@
   --cicl-muted-bg: #f3f4f7;
   --cicl-card-bg: #ffffff;
   --cicl-border: #e2e8f0;
-  --cicl-accent: #0f7bff;
+  --cicl-accent: #e46504;
 }
 
 /* HERO */
@@ -20,15 +20,17 @@
 }
 
 .proposal-hero {
-  padding: 3.5rem 0 2.5rem;
+  padding: 4rem 0 2.5rem;
   max-width: var(--cicl-page-max-width);
   margin-inline: auto;
-  background:
-    radial-gradient(circle at top left, #eef3ff 0, #f6f7fb 40%, #ffffff 100%);
+  /* background:
+    radial-gradient(circle at top left, #eef3ff 0, #f6f7fb 40%, #ffffff 100%); */
+    text-align: center;
 }
 
 .proposal-hero__content {
   max-width: 720px;
+  margin: 0 auto;
 }
 
 .proposal-hero h1 {
