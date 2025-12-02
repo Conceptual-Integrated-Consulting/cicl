@@ -1367,6 +1367,7 @@ header {
   display: flex;
   gap: 60px;
   padding: 60px 20px;
+  overflow-x: hidden;
 }
 
 /* LEFT SIDE — sticky on desktop */
@@ -3594,7 +3595,7 @@ header {
     padding: 3rem 1rem;
   }
   .visualization {
-    padding-inline: 2rem;
+    padding-inline: 1rem;
   }
   .innovation h4,
   .organization-approach h4,

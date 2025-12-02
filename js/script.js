@@ -106,4 +106,99 @@ document.addEventListener("DOMContentLoaded", function () {
   })();
 });
 
+// TODO: replace with your real EmailJS values
+const EMAILJS_PUBLIC_KEY = "YOUR_PUBLIC_KEY_HERE";
+const EMAILJS_SERVICE_ID = "YOUR_SERVICE_ID_HERE";
+const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID_HERE";
+
+(function () {
+  // Initialise EmailJS
+  if (window.emailjs) {
+    emailjs.init({
+      publicKey: EMAILJS_PUBLIC_KEY,
+    });
+  }
+
+  const form = document.getElementById("proposalForm");
+  const statusEl = document.getElementById("proposalStatusMessage");
+
+  if (!form) return;
+
+  function setStatus(message, type) {
+    if (!statusEl) return;
+    statusEl.textContent = message;
+    statusEl.hidden = false;
+    statusEl.classList.remove("is-success", "is-error", "is-info");
+    if (type) statusEl.classList.add(`is-${type}`);
+  }
+
+  function clearStatus() {
+    if (!statusEl) return;
+    statusEl.hidden = true;
+    statusEl.textContent = "";
+    statusEl.classList.remove("is-success", "is-error", "is-info");
+  }
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    clearStatus();
+
+    if (!window.emailjs) {
+      setStatus(
+        "We could not initialise the email service. Please try again later or email info@ciconsult.com.ng.",
+        "error"
+      );
+      return;
+    }
+
+    // Disable button while sending
+    const submitBtn = form.querySelector(".proposal-submit");
+    const originalText = submitBtn ? submitBtn.textContent : "";
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Sending…";
+    }
+
+    // Optional: build a friendly summary of selected services
+    const serviceCheckboxes = form.querySelectorAll('input[name="services[]"], input[name="services"]');
+    const selectedServices = [];
+    serviceCheckboxes.forEach((cb) => {
+      if (cb.checked) {
+        const label = form.querySelector(`label[for="${cb.id}"]`);
+        selectedServices.push(label ? label.textContent.trim() : cb.value);
+      }
+    });
+
+    // Create a FormData to send with extra fields if needed
+    const formData = new FormData(form);
+    // Add a combined services summary for the template
+    formData.set("services_summary", selectedServices.join(", ") || "Not specified");
+
+    emailjs
+      .sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form)
+      .then(
+        () => {
+          setStatus(
+            "Thank you. Your request has been submitted. We’ll review it and get back to you within 2–3 business days.",
+            "success"
+          );
+          form.reset();
+        },
+        (error) => {
+          console.error("EmailJS error", error);
+          setStatus(
+            "We couldn’t submit your request at the moment. Please try again or email info@ciconsult.com.ng.",
+            "error"
+          );
+        }
+      )
+      .finally(() => {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalText || "Submit request";
+        }
+      });
+  });
+})();
+
 
