@@ -3621,9 +3621,18 @@ header {
     margin: auto;
     margin-block: 1rem;
   }
-  .hero-links {
+  .hero .hero-links {
     flex-direction: column;
     align-items: center;
+  }
+  .cta-calls {
+    flex-direction: column;
+    align-items: center;
+  }
+  #cta-calls {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
   }
   .elementor-section .actions {
     flex-direction: column;
