@@ -368,6 +368,7 @@ header {
   max-width: 70%;
   margin: auto;
   margin-block: 1rem;
+  padding-bottom: 1rem;
 }
 .hero .hero-links {
   padding-top: 2rem;
