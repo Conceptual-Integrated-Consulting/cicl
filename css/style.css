@@ -3715,3 +3715,36 @@ header {
 .legal-section ul li {
   list-style-type: disc;
 }
+
+.hero--subpage1 {
+  background-image: url("/images/terms-condition.avif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin-block-end: 1.5rem;
+}
+.hero--subpage2 {
+  background-image: url("/images/privacy-policy.avif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin-block-end: 1.5rem;
+}
+.hero--subpage::after {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.hero--subpage h1, .hero--subpage p {
+  color: var(--general-white);
+  position: relative;
+  z-index: 3;
+}
