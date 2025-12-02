@@ -1103,6 +1103,10 @@ header {
 .footer-column ul li a:hover {
   color: var(--primary-accent-color);
 }
+.footer-column address {
+  color: var(--general-white);
+  font-weight: 300;
+}
 
 /* --- SUBSCRIBE COLUMN --- */
 .footer-subscribe {
