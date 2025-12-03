@@ -340,7 +340,7 @@
     </nav>
 
     <div class="actions">
-      <a href="/contact.html#contact-form" class="btn-solid free-booking" data-analytics="cta_book_strategy_call">Book Strategy
+      <a href="/booking.html" class="btn-solid free-booking" data-analytics="cta_book_strategy_call">Book Strategy
         Call</a>
       <a href="/proposal.html" class="btn-ghost" data-analytics="cta_request_proposal">Request Proposal</a>
       <button type="button" id="menu-btn" class="btn menu-btn" aria-controls="mobile-nav" aria-expanded="false"
@@ -852,65 +852,192 @@
 
               <div class="form-row">
                 <div class="form-field">
+                  <label for="specificService">
+                    Specific service you're interested in
+                  </label>
+                  <input
+                    type="text"
+                    id="specificService"
+                    name="specificService"
+                    class="contact-box"
+                    placeholder="e.g. Recruitment & Selection, Market Research & Business Analysis"
+                    readonly
+                    style="background-color: #f5f5f5; cursor: not-allowed;"
+                  />
+                  <p class="field-help">
+                    This field is auto-filled if you clicked "Book Now" from a specific service.
+                  </p>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-field">
                   <label>
                     Specific areas of interest (select all that apply)
                   </label>
                   <div class="checkbox-grid">
+                    <!-- Talent Management & HR Solutions -->
                     <label class="checkbox-inline">
                       <input
                         type="checkbox"
                         name="interestAreas"
-                        value="recruitment"
+                        value="recruitment-selection"
                       />
-                      Recruitment &amp; selection
+                      Recruitment &amp; Selection
                     </label>
                     <label class="checkbox-inline">
                       <input
                         type="checkbox"
                         name="interestAreas"
-                        value="hr-systems"
+                        value="training-development"
                       />
-                      HR systems &amp; policies
+                      Training &amp; Development
                     </label>
                     <label class="checkbox-inline">
                       <input
                         type="checkbox"
                         name="interestAreas"
-                        value="outsourcing"
+                        value="talent-payroll-outsourcing"
                       />
-                      Talent &amp; payroll outsourcing
+                      Talent &amp; Payroll Outsourcing
                     </label>
                     <label class="checkbox-inline">
                       <input
                         type="checkbox"
                         name="interestAreas"
-                        value="strategy"
+                        value="background-checks"
                       />
-                      Corporate strategy &amp; execution
+                      Background Checks &amp; Verification
                     </label>
                     <label class="checkbox-inline">
                       <input
                         type="checkbox"
                         name="interestAreas"
-                        value="process"
+                        value="hr-policies"
                       />
-                      Process optimisation &amp; operating model
+                      HR Policies &amp; Employee Handbook
                     </label>
                     <label class="checkbox-inline">
                       <input
                         type="checkbox"
                         name="interestAreas"
-                        value="leadership-training"
+                        value="career-services"
                       />
-                      Leadership &amp; management training
+                      Career Services
+                    </label>
+                    <!-- Business Development & Strategy -->
+                    <label class="checkbox-inline">
+                      <input
+                        type="checkbox"
+                        name="interestAreas"
+                        value="market-research"
+                      />
+                      Market Research &amp; Business Analysis
                     </label>
                     <label class="checkbox-inline">
                       <input
                         type="checkbox"
                         name="interestAreas"
-                        value="tech-data-training"
+                        value="business-model"
                       />
-                      Technology &amp; data training
+                      Business Model &amp; Structure Design
+                    </label>
+                    <label class="checkbox-inline">
+                      <input
+                        type="checkbox"
+                        name="interestAreas"
+                        value="corporate-strategy"
+                      />
+                      Corporate Strategy &amp; Execution
+                    </label>
+                    <label class="checkbox-inline">
+                      <input
+                        type="checkbox"
+                        name="interestAreas"
+                        value="corporate-branding"
+                      />
+                      Corporate Branding
+                    </label>
+                    <label class="checkbox-inline">
+                      <input
+                        type="checkbox"
+                        name="interestAreas"
+                        value="process-optimization"
+                      />
+                      Business Process Optimization
+                    </label>
+                    <label class="checkbox-inline">
+                      <input
+                        type="checkbox"
+                        name="interestAreas"
+                        value="financial-modeling"
+                      />
+                      Financial Modeling &amp; Valuation
+                    </label>
+                    <label class="checkbox-inline">
+                      <input
+                        type="checkbox"
+                        name="interestAreas"
+                        value="auditing"
+                      />
+                      Auditing &amp; Reconciliation
+                    </label>
+                    <!-- Professional Training Programmes -->
+                    <label class="checkbox-inline">
+                      <input
+                        type="checkbox"
+                        name="interestAreas"
+                        value="leadership-management"
+                      />
+                      Leadership &amp; Management Training
+                    </label>
+                    <label class="checkbox-inline">
+                      <input
+                        type="checkbox"
+                        name="interestAreas"
+                        value="hr-people-management"
+                      />
+                      HR &amp; People Management Training
+                    </label>
+                    <label class="checkbox-inline">
+                      <input
+                        type="checkbox"
+                        name="interestAreas"
+                        value="finance-accounting"
+                      />
+                      Finance &amp; Accounting Training
+                    </label>
+                    <label class="checkbox-inline">
+                      <input
+                        type="checkbox"
+                        name="interestAreas"
+                        value="technology-data"
+                      />
+                      Technology &amp; Data Training
+                    </label>
+                    <label class="checkbox-inline">
+                      <input
+                        type="checkbox"
+                        name="interestAreas"
+                        value="operations-supply-chain"
+                      />
+                      Operations &amp; Supply Chain Training
+                    </label>
+                    <label class="checkbox-inline">
+                      <input
+                        type="checkbox"
+                        name="interestAreas"
+                        value="hse"
+                      />
+                      Health, Safety &amp; Environment (HSE)
+                    </label>
+                    <label class="checkbox-inline">
+                      <input
+                        type="checkbox"
+                        name="interestAreas"
+                        value="sales-marketing"
+                      />
+                      Sales &amp; Marketing Training
                     </label>
                     <label class="checkbox-inline">
                       <input
@@ -1137,7 +1264,7 @@
       </p>
 
       <div data-aos="fade-up" data-aos="fade-down" class="cta-calls" id="cta-calls">
-        <a href="contact.html" class="btn-solid">Contact our team</a>
+        <a href="/contact.html" class="btn-solid">Contact our team</a>
         <a href="proposal.html" class="btn-ghost">Request a proposal</a>
       </div>
     </section>
@@ -1237,6 +1364,55 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+      
+      // Handle URL parameters to pre-fill service information
+      document.addEventListener('DOMContentLoaded', function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const service = urlParams.get('service');
+        const pillar = urlParams.get('pillar');
+        
+        if (service) {
+          const specificServiceField = document.getElementById('specificService');
+          if (specificServiceField) {
+            specificServiceField.value = decodeURIComponent(service);
+          }
+        }
+        
+        if (pillar) {
+          const primaryPillarField = document.getElementById('primaryPillar');
+          if (primaryPillarField) {
+            const pillarValue = pillar.toLowerCase().replace(/\s+/g, '-');
+            // Map URL parameter to form value
+            const pillarMap = {
+              'talent-management-hr-solutions': 'talent-hr',
+              'business-development-strategy': 'business-strategy',
+              'professional-training-programmes': 'training'
+            };
+            
+            if (pillarMap[pillarValue]) {
+              primaryPillarField.value = pillarMap[pillarValue];
+            }
+          }
+        }
+        
+        // Auto-check the relevant interest area checkbox if service is provided
+        if (service) {
+          const serviceValue = service.toLowerCase()
+            .replace(/\s+/g, '-')
+            .replace(/&/g, '')
+            .replace(/amp;/g, '')
+            .replace(/[^a-z0-9-]/g, '');
+          
+          // Try to find matching checkbox
+          const checkboxes = document.querySelectorAll('input[name="interestAreas"]');
+          checkboxes.forEach(checkbox => {
+            const checkboxValue = checkbox.value.toLowerCase();
+            if (serviceValue.includes(checkboxValue) || checkboxValue.includes(serviceValue)) {
+              checkbox.checked = true;
+            }
+          });
+        }
+      });
     </script>
   </body>
 </html>

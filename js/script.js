@@ -244,6 +244,7 @@ document.addEventListener("DOMContentLoaded", function () {
       country: formData.get("country") || "",
       primaryPillar: formData.get("primaryPillar") || "",
       engagementType: formData.get("engagementType") || "",
+      specificService: formData.get("specificService") || "",
       interestAreas: interestAreas || "",
       budgetRange: formData.get("budgetRange") || "",
       referral: formData.get("referral") || "",

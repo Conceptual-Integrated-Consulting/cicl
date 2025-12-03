@@ -462,7 +462,7 @@
 
       <div class="actions">
         <a
-          href="/contact.html#contact-form"
+          href="/booking.html"
           class="btn-solid free-booking"
           data-analytics="cta_book_strategy_call"
           >Book Strategy Call</a
@@ -930,6 +930,28 @@
       </div>
     </section>
 
+    <!-- PRODUCTS & SERVICES CARDS -->
+    <section class="container visualization" data-aos="fade-up" data-aos="fade-down">
+      <div>
+        <div class="visualization-sides">
+          <div>
+            <h4 data-aos="fade-up" data-aos="fade-down">Our Services</h4>
+            <h2 data-aos="fade-up" data-aos="fade-down">
+              Talent Management & <br />HR Solutions
+            </h2>
+            <p data-aos="fade-up" data-aos="fade-down" class="first-p-tag">
+              Build the foundations: structured hiring, clear policies, trusted
+              verification, and stress-free payroll so teams can thrive.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div data-aos="fade-up" data-aos="fade-down" class="carousel-container" id="talent-hr-services-container">
+        <!-- Services will be dynamically loaded here -->
+      </div>
+    </section>
+
     <!-- SERVICE MODULES (SUBPAGES) -->
     <section id="modules" class="service-modules" data-aos="fade-up" data-aos="fade-down" >
       <div class="section-header">
@@ -1289,13 +1311,13 @@
               </div>
               <!-- <div data-aos="fade-up" data-aos="fade-down" class="actions">
                 <a
-                  href="booking.html"
+                  href="/booking.html"
                   class="btn-solid"
                   data-analytics="cta_book_strategy_call"
                   >Book Strategy Call</a
                 >
                 <a
-                  href="contact.html"
+                  href="/contact.html"
                   class="btn-ghost"
                   data-analytics="cta_request_proposal"
                   >Request Proposal</a
@@ -1604,9 +1626,48 @@
     </footer>
 
     <script src="../js/script.js"></script>
+    <script src="../js/services-data.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+      
+      // Load Talent Management & HR Services
+      function loadTalentHRServices() {
+        const container = document.getElementById('talent-hr-services-container');
+        if (!container) return;
+        
+        talentManagementHRServices.forEach(service => {
+          const card = document.createElement('div');
+          card.className = 'card';
+          card.innerHTML = `
+            <div class="card-image-wrapper">
+              <img src="${service.image}" alt="${service.imageAlt}" loading="lazy" />
+              <span class="card-tag ${service.tagClass}">${service.tag}</span>
+            </div>
+            <div class="card-content">
+              <div class="card-meta">
+                <span><i class="fas fa-calendar-alt"></i> ${service.schedule}</span>
+                <span><i class="fas fa-map-marker-alt"></i> ${service.location}</span>
+              </div>
+              <h4>${service.title}</h4>
+              <p>${service.description}</p>
+              <div class="card-actions" style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1rem;">
+                <a href="${service.link}" class="card-link">View Service <i class="fas fa-chevron-right"></i></a>
+                <a href="${service.bookingLink}?service=${encodeURIComponent(service.title)}&pillar=Talent%20Management%20%26%20HR%20Solutions" class="btn-solid" style="padding: 0.5rem 1rem; font-size: 0.875rem; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">Book Now <i class="fas fa-calendar-check"></i></a>
+                <a href="${service.proposalLink}" class="btn-ghost" style="padding: 0.5rem 1rem; font-size: 0.875rem; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">Request Quote <i class="fas fa-file-alt"></i></a>
+              </div>
+            </div>
+          `;
+          container.appendChild(card);
+        });
+      }
+      
+      // Load services when DOM is ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', loadTalentHRServices);
+      } else {
+        loadTalentHRServices();
+      }
     </script>
   </body>
 </html>
