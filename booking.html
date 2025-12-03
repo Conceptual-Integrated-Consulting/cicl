@@ -9,6 +9,14 @@
       name="description"
       content="Book a strategy call or training discovery session with Conceptual Integrated Consulting Limited (CICL)."
     />
+    
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- FAVICON -->
     <link
@@ -538,7 +546,7 @@
   </header>
 
     <!-- Hero -->
-    <main class="hero hero--subpage">
+    <main class="hero hero--subpage-booking">
       <section class="container">
         <h1 data-aos="fade-up" data-aos="fade-down">
           Book a strategy call with CICL
@@ -556,65 +564,64 @@
         >
           <span class="hero-badge">Talent. Strategy. Capability building.</span>
         </div>
-      </section>
-
-      <!-- How booking works -->
-      <section class="container process-flow-container booking-process">
-        <div class="intro-column">
-          <h4 data-aos="fade-up" data-aos="fade-down" class="method-label">
-            How it works
-          </h4>
-          <h2 data-aos="fade-up" data-aos="fade-down">
-            From enquiry to engagement in a few clear steps
-          </h2>
-          <p data-aos="fade-up" data-aos="fade-down">
-            Complete the booking form, we review your needs, and then we align
-            on the right CICL solution for your context.
-          </p>
-        </div>
-
-        <div class="timeline-column">
-          <div class="timeline-step">
-            <div class="icon-wrapper">
-              <i class="fas fa-clipboard-list" aria-hidden="true"></i>
-            </div>
-            <div class="content-box">
-              <h2>Submit your request</h2>
-              <p>
-                Tell us about your organization, priority areas, and preferred
-                timelines.
-              </p>
-            </div>
-          </div>
-
-          <div class="timeline-step">
-            <div class="icon-wrapper">
-              <i class="fas fa-user-tie" aria-hidden="true"></i>
-            </div>
-            <div class="content-box">
-              <h2>We review and schedule</h2>
-              <p>
-                A CICL consultant reviews your details and contacts you to agree
-                on a suitable date and meeting format.
-              </p>
-            </div>
-          </div>
-
-          <div class="timeline-step">
-            <div class="icon-wrapper">
-              <i class="fas fa-handshake" aria-hidden="true"></i>
-            </div>
-            <div class="content-box">
-              <h2>Strategy conversation</h2>
-              <p>
-                We explore your current reality, desired outcomes, and recommend
-                the right CICL service path.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
+
+    <!-- How booking works -->
+    <section class="container process-flow-container booking-process">
+      <div class="intro-column">
+        <h4 data-aos="fade-up" data-aos="fade-down" class="method-label">
+          How it works
+        </h4>
+        <h2 data-aos="fade-up" data-aos="fade-down">
+          From enquiry to engagement in a few clear steps
+        </h2>
+        <p data-aos="fade-up" data-aos="fade-down">
+          Complete the booking form, we review your needs, and then we align
+          on the right CICL solution for your context.
+        </p>
+      </div>
+
+      <div class="timeline-column">
+        <div class="timeline-step">
+          <div class="icon-wrapper">
+            <i class="fas fa-clipboard-list" aria-hidden="true"></i>
+          </div>
+          <div class="content-box">
+            <h2>Submit your request</h2>
+            <p>
+              Tell us about your organization, priority areas, and preferred
+              timelines.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-step">
+          <div class="icon-wrapper">
+            <i class="fas fa-user-tie" aria-hidden="true"></i>
+          </div>
+          <div class="content-box">
+            <h2>We review and schedule</h2>
+            <p>
+              A CICL consultant reviews your details and contacts you to agree
+              on a suitable date and meeting format.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-step">
+          <div class="icon-wrapper">
+            <i class="fas fa-handshake" aria-hidden="true"></i>
+          </div>
+          <div class="content-box">
+            <h2>Strategy conversation</h2>
+            <p>
+              We explore your current reality, desired outcomes, and recommend
+              the right CICL service path.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Booking form -->
     <section class="container booking-section">
@@ -628,11 +635,12 @@
           </p>
 
           <form
+            id="bookingForm"
             class="application-form"
             action="/submit-booking"
             method="POST"
             novalidate
-          >
+            >
             <!-- About you -->
             <fieldset class="application-fieldset">
               <legend>About you</legend>
@@ -1070,8 +1078,8 @@
         <aside
           class="booking-sidebar"
           aria-label="What to expect after booking"
-          data-aos="fade-up"
           data-aos="fade-down"
+          data-aos="fade-up"
         >
           <h3>What to expect</h3>
           <ul class="booking-highlights">
@@ -1099,7 +1107,7 @@
             </p>
             <p class="support-contact">
               Email:
-              <a href="mailto:info@cicl.example">info@cicl.example</a><br />
+              <a href="mailto:info@ciconsult.com.ng">info@ciconsult.com.ng</a><br />
               Phone: <span>+234 (0) XXX XXX XXXX</span>
             </p>
           </div>
@@ -1128,7 +1136,7 @@
         specific questions about CICL’s services.
       </p>
 
-      <div data-aos="fade-up" data-aos="fade-down">
+      <div data-aos="fade-up" data-aos="fade-down" class="cta-calls" id="cta-calls">
         <a href="contact.html" class="btn-solid">Contact our team</a>
         <a href="proposal.html" class="btn-ghost">Request a proposal</a>
       </div>
@@ -1225,17 +1233,10 @@
   </footer>
 
     <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-
-    <!-- Font Awesome (if not already loaded globally) -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
-      integrity="sha512-rXnS0EwP0Bq2UG2RglNn3L48Kv8ix7JX1x7t3p+0MyoVo9hw3rroWAtxEvsC0BpFkEuk+qS0bkkCm1cWtiYfSw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
   </body>
 </html>

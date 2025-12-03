@@ -202,3 +202,85 @@ const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID_HERE";
 })();
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  const bookingForm = document.getElementById("bookingForm");
+
+  if (!bookingForm) return;
+
+  bookingForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    // HTML5 validation first
+    if (!bookingForm.checkValidity()) {
+      bookingForm.reportValidity();
+      return;
+    }
+
+    const submitBtn = bookingForm.querySelector('button[type="submit"]');
+    const originalText = submitBtn.textContent;
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Sending...";
+
+    // Collect form data
+    const formData = new FormData(bookingForm);
+
+    // Handle checkbox group: interestAreas[]
+    const interestAreas = formData.getAll("interestAreas").join(", ");
+
+    const templateParams = {
+      // About you
+      firstName: formData.get("firstName") || "",
+      lastName: formData.get("lastName") || "",
+      email: formData.get("email") || "",
+      phone: formData.get("phone") || "",
+      jobTitle: formData.get("jobTitle") || "",
+      companyName: formData.get("companyName") || "",
+
+      // Org & service focus
+      orgType: formData.get("orgType") || "",
+      industry: formData.get("industry") || "",
+      orgSize: formData.get("orgSize") || "",
+      country: formData.get("country") || "",
+      primaryPillar: formData.get("primaryPillar") || "",
+      engagementType: formData.get("engagementType") || "",
+      interestAreas: interestAreas || "",
+      budgetRange: formData.get("budgetRange") || "",
+      referral: formData.get("referral") || "",
+
+      // Timing & logistics
+      meetingMode: formData.get("meetingMode") || "",
+      timeZone: formData.get("timeZone") || "",
+      preferredDates: formData.get("preferredDates") || "",
+      participants: formData.get("participants") || "",
+      context: formData.get("context") || "",
+
+      // You can add extra meta if your template expects it
+      submitted_from: "CICL Services Booking Page",
+    };
+
+    // Replace with your own IDs from EmailJS dashboard
+    const SERVICE_ID = "YOUR_SERVICE_ID";
+    const TEMPLATE_ID = "YOUR_TEMPLATE_ID";
+
+    emailjs
+      .send(SERVICE_ID, TEMPLATE_ID, templateParams)
+      .then(function () {
+        alert(
+          "Thank you. Your booking request has been sent successfully. A CICL consultant will contact you shortly."
+        );
+        bookingForm.reset();
+      })
+      .catch(function (error) {
+        console.error("EmailJS error:", error);
+        alert(
+          "Sorry, something went wrong while sending your request. Please try again, or contact us using the email/phone on this page."
+        );
+      })
+      .finally(function () {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
+      });
+  });
+});
+

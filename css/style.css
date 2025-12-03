@@ -3761,3 +3761,317 @@ header {
   position: relative;
   z-index: 3;
 }
+
+/* ===========================
+   BOOKING SECTION
+   =========================== */
+
+   .booking-section {
+    padding: 4rem 0;
+    background: #f9fafb;
+  }
+  
+  .booking-layout {
+    display: grid;
+    gap: 2.5rem;
+    align-items: flex-start;
+  }
+  
+  /* Card around the form */
+  .booking-form-wrapper {
+    background-color: #ffffff;
+    border-radius: 1.25rem;
+    padding: 2rem 2rem 2.5rem;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.07);
+  }
+  
+  .booking-form-wrapper h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.35rem;
+  }
+  
+  .booking-form-wrapper > p {
+    font-size: 0.95rem;
+    color: #4b5563;
+    margin-bottom: 1.75rem;
+  }
+  
+  /* ===========================
+     FORM STRUCTURE
+     =========================== */
+  
+  .application-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+  
+  .application-fieldset {
+    border: 1px solid #e5e7eb;
+    border-radius: 1rem;
+    padding: 1.5rem 1.4rem 1.6rem;
+    margin: 0;
+  }
+  
+  .application-fieldset legend {
+    padding: 0 0.4rem;
+    font-size: 0.86rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #4b5563;
+  }
+  
+  /* Rows & fields */
+  
+  .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin-top: 1rem;
+  }
+  
+  .form-field {
+    flex: 1 1 0;
+    min-width: min(100%, 15rem);
+  }
+  
+  .form-field label {
+    display: block;
+    font-size: 0.86rem;
+    font-weight: 500;
+    color: #111827;
+    margin-bottom: 0.35rem;
+  }
+  
+  .field-help {
+    margin-top: 0.35rem;
+    font-size: 0.8rem;
+    color: #6b7280;
+  }
+  
+  /* Inputs / selects / textarea */
+  
+  .contact-box {
+    width: 100%;
+    border-radius: 0.75rem;
+    border: 1px solid #d1d5db;
+    padding: 0.7rem 0.85rem;
+    font-size: 0.94rem;
+    line-height: 1.4;
+    background-color: #ffffff;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease,
+      background-color 0.15s ease;
+  }
+  
+  .contact-box:focus {
+    outline: none;
+    border-color: #0284c7;
+    box-shadow: 0 0 0 1px rgba(2, 132, 199, 0.2);
+  }
+  
+  .contact-box::placeholder {
+    color: #9ca3af;
+    font-size: 0.9rem;
+  }
+  
+  textarea.contact-box {
+    resize: vertical;
+    min-height: 140px;
+  }
+  
+  /* Number input tweaks */
+  input[type="number"].contact-box::-webkit-outer-spin-button,
+  input[type="number"].contact-box::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="number"].contact-box {
+    -moz-appearance: textfield;
+  }
+  
+  /* ===========================
+     CHECKBOX GRID
+     =========================== */
+  
+  .checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 0.5rem 1rem;
+    margin-top: 0.35rem;
+  }
+  
+  .checkbox-inline {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.4rem;
+    font-size: 0.88rem;
+    color: #111827;
+    cursor: pointer;
+  }
+  
+  .checkbox-inline input[type="checkbox"] {
+    margin-top: 0.15rem;
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  /* Terms checkbox line */
+  
+  .form-field .checkbox-inline a {
+    text-decoration: underline;
+  }
+  
+  /* ===========================
+     FORM ACTIONS
+     =========================== */
+  
+  .form-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-top: 0.5rem;
+  }
+  
+  .form-actions .btn-solid {
+    align-self: flex-start;
+    min-width: 12rem;
+  }
+  
+  .form-actions .field-help {
+    font-size: 0.8rem;
+    color: #6b7280;
+  }
+  
+  /* Optional status text if you add it later */
+  .form-status {
+    font-size: 0.85rem;
+    margin-top: 0.4rem;
+  }
+  
+  /* ===========================
+     SIDEBAR (RIGHT)
+     =========================== */
+  
+  .booking-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+  }
+  
+  .booking-sidebar h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  /* Highlights list */
+  
+  .booking-highlights {
+    list-style: none;
+    margin: 0;
+    padding: 1.5rem 1.4rem;
+    border-radius: 1.2rem;
+    background: radial-gradient(circle at top left, #0b1f33 0, #020617 55%);
+    color: #e5e7eb;
+    box-shadow: 0 14px 35px rgba(15, 23, 42, 0.4);
+  }
+  
+  .booking-highlights li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.55rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  .booking-highlights li + li {
+    margin-top: 0.7rem;
+  }
+  
+  .booking-highlights i {
+    margin-top: 0.15rem;
+    font-size: 0.95rem;
+    color: #22d3ee;
+  }
+  
+  /* Support card */
+  
+  .support-card {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    border: 1px solid #e5e7eb;
+    padding: 1.4rem 1.5rem;
+    font-size: 0.9rem;
+    color: #374151;
+  }
+  
+  .support-card h4 {
+    font-size: 0.95rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  .support-card p {
+    margin-bottom: 0.5rem;
+  }
+  
+  .support-contact a {
+    font-weight: 500;
+    color: #0f766e;
+    text-decoration: underline;
+  }
+  
+  /* Mini FAQ in sidebar */
+  
+  .mini-faq h4 {
+    font-size: 0.95rem;
+    margin-bottom: 0.35rem;
+  }
+  
+  .mini-faq ul {
+    list-style: disc;
+    margin: 0 0 0 1.1rem;
+    padding: 0;
+    font-size: 0.86rem;
+    color: #4b5563;
+  }
+  
+  .mini-faq li + li {
+    margin-top: 0.25rem;
+  }
+  
+  /* ===========================
+     RESPONSIVE
+     =========================== */
+  
+  @media (min-width: 900px) {
+    .booking-layout {
+      grid-template-columns: minmax(0, 2.1fr) minmax(0, 1.4fr);
+    }
+  }
+  
+  @media (max-width: 899px) {
+    .booking-section {
+      padding: 3rem 1.5rem;
+    }
+  
+    .booking-form-wrapper {
+      padding: 1.6rem 1.3rem 2rem;
+      border-radius: 1rem;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .form-row {
+      flex-direction: column;
+    }
+  
+    .booking-section {
+      padding: 2.5rem 1rem;
+    }
+  
+    .booking-highlights {
+      padding: 1.25rem 1.1rem;
+    }
+  }
+  
